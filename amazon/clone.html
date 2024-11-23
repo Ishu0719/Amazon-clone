@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazont</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="amazon.css">
+
+    
+
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class=" nav-logo border">
+                <div class="logo"></div>
+            </div>
+        <div class="nav-address border">
+            <p class="add-first"> Deliver to</p>
+            <div class="add-icon">
+                <i class="fa-solid fa-location-dot"></i>
+
+                <p class="add-sec"> India</p>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <select class="search-select"><option>
+                All</option>
+                </select>
+<input placeholder=" search Amazon" class="search-input">
+<div class="search-icon">
+    <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+
+        
+
+            </div>
+            <div class="language-container">
+                <p> English</p>
+                <div class="language-img">
+                    <img src="data:image/png;base64,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"/>
+                </div>
+            </div>
+                    
+
+         
+        <div class="nav-sign-in border">
+            <p ><span> Hello,Sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+        <div class="nav-return border">
+            <p><span>
+Returns
+            </span></p>
+            <p class="nav-second"> &orders</p>
+        </div>
+        <div class="nav-cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Cart
+        </div>
+        </div>
+        <div class="panel">
+        <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+        <div class="panel-options">
+            <span><p> Today's deal</p></span>
+            <span> <P>Customer Service</P></span>
+                <span><p> Registry</p></span>
+                    <span> <p> Gift Cards</p></span>
+                        <span><p> Sell</p></span>
+        </div>
+        <div class="panel-deals">
+            Shop Deal In Electronics
+        </div>
+        </div>
+
+    </header>
+    <div class="hero-section">
+        <div class="hero-mess">
+            <p>
+                You are on amazon.com You can Shop on Amazon India For millions of Product with Fast delivery.  <a>click here to go to amazon.in</a>
+            </p>
+        </div>
+    </div>
+    <div class="shopping-sec">
+        <div class=" box">
+            <div class="box-cont">
+            <h2> Clothes</h2>
+            <div class="box-img" style="background-image: url(box1_image.jpg);"></div>
+            <p> See more</p></div>
+        </div>
+        <div class=" box"> <div class="box-cont">
+            <h2> Health And Personal Care</h2>
+            <div class="box-img" style="background-image: url(box2_image.jpg);"></div>
+            <p> See more</p></div>
+        </div>
+        <div class=" box">
+            <div class="box-cont">
+                <h2> Furniture</h2>
+                <div class="box-img" style="background-image: url(box3_image.jpg);"></div>
+                <p> See more</p></div>
+        </div>
+        <div class=" box"> 
+            <div class="box-cont">
+            <h2> Electronics</h2>
+            <div class="box-img" style="background-image: url(box4_image.jpg);"></div>
+            <p> See more</p></div>
+        </div>
+        <div class="shopping-sec">
+            <div class="box4 box">
+                <div class="box-cont">
+                <h2>Beauty Picks</h2>
+                <div class="box-img" style="background-image: url(box5_image.jpg);"></div>
+                <p> See more</p></div>
+            </div>
+            <div class="box4 box"> <div class="box-cont">
+                <h2>Pet Care</h2>
+                <div class="box-img" style="background-image: url(box6_image.jpg);"></div>
+                <p> See more</p></div>
+            </div>
+            <div class="box4 box">
+                <div class="box-cont">
+                    <h2> New Arrival In Toys</h2>
+                    <div class="box-img" style="background-image: url(box7_image.jpg);"></div>
+                    <p> See more</p></div>
+            </div>
+            <div class=" box4 box"> 
+                <div class="box-cont">
+                <h2>Skincare</h2>
+                <div class="box-img" style="background-image:url('skincare.jpg')"></div>
+                <p> See more</p></div>
+            </div>
+            <div class=" box5 box"> 
+                <div class="box-cont">
+                <h2>Acccesories</h2>
+                <div class="box-img" style="background-image:url('accesories.jpg')"></div>
+                <p> See more</p></div>
+            </div><div class=" box6 box"> 
+                <div class="box-cont">
+                <h2>Decor</h2>
+                <div class="box-img" style="background-image:url('decor.jpg')"></div>
+                <p> See more</p></div>
+            </div><div class=" box7 box"> 
+                <div class="box-cont">
+                <h2>Kitchen & Dinning</h2>
+                <div class="box-img" style="background-image:url('kitchen ND dinning.jpg')"></div>
+                <p> See more</p></div>
+            </div><div class=" box8 box"> 
+                <div class="box-cont">
+                <h2> Small gifts under $5</h2>
+                <div class="box-img" style="background-image:url('image dor amazon1.jpg')"></div>
+                <p> See more</p></div>
+            </div>
+            <div class="top-picks">
+                <h2 class="top"> Top picks</h2>
+                <img src="top picks.jpg"/>
+                <img src="top picks3.jpg"/>
+                <img src="shoes under$50.jpg"/>
+                <img src="skincare.jpg"/>
+            </div>
+
+           
+    </div>
+    
+    <footer>
+<div class="new-panel" style="align-content: center;">
+                <hr/>
+                <h2>See Personalized recommendations</h2>
+                
+                    <button> Sign In</button>
+                
+                <p>New customer?
+                <a class="s" >Start here</a></p>
+           <hr/> 
+        </div>
+
+        <div class="foot-pannel1">
+            Back To Top
+        </div>
+        <div class="foot-pannel2">
+            <ul>
+                <p>
+                    Get to Know us
+                </p>
+                <a>
+                    Career
+                </a><a>
+                    Blog
+                </a><a>
+                    About Amazon
+                </a><a>
+                    Tnvestor Relation
+                </a><a>
+                   Amazon Devices
+                </a><a>
+                   Amazon Science
+                </a>
+            </ul>
+            <ul>
+                <p>
+                    Make Money with Us
+
+                </p>
+                <a>
+                    Sell products on Amazon
+                </a><a>
+                    Sell on Amazon Business
+                </a><a>
+                    Sell apps on Amazon
+                </a><a>
+                    Become an Affiliate
+                </a><a>
+                    Advertise Your Products
+                </a><a>
+                    Self-Publish with Us
+                </a>
+                <a>
+                    Host an Amazon Hub 
+                </a>
+                <a>
+                    ›See More Make Money with Us 
+                </a>
+            </ul>
+            <ul>
+                <p>
+                    Amazon Payment Products
+
+                </p>
+                <a>
+                    Amazon Business Card
+                </a><a>
+                    Shop with Points
+                </a><a>
+                    Reload your Balance
+                </a><a>
+                    Amazon Currency Converter
+                </a>
+            </ul>
+            <ul>
+                <p>
+                    Let Us Help You
+
+
+                </p>
+                <a>
+                    Amazon and COVID-19
+                </a>
+                <a>
+                    Your Account
+                </a><a>
+                    Your Order
+                </a><a>
+                    Shipping Rates & Policies
+                </a><a>
+                    Returns & Replacements
+                </a>
+                <a>
+                    Manage your Content and Devices
+                </a>
+                <a>
+                    Help
+                </a>
+            </ul>
+        </div>
+        <div class="foot-pannel3">
+            <div class="logo"></div>
+        </div>
+        <div class="foot-pannel4">
+            <div class="pages">
+                <a>Conditions of use</a>
+                <a>Privacy Notice</a>
+                <a>Your Ads Privacy Choices</a>
+                
+            </div>
+            <div class="copyright">
+@ 1996-2023 , Amazon.com, Inc, or its affiliates
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
